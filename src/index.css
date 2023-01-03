@@ -145,7 +145,7 @@ h1:hover{
 .imgP{
   width: 500px;
   position: absolute;
-  top: 0;
+  top: -90px;
   left: calc(50% - 250px);
 }
 

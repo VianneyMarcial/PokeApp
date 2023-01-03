@@ -50,8 +50,8 @@ const Pokedex = () => {
       <div className="infoSet">
         <input type="text" placeholder="'search character" value={charaterName} onChange={(e) => setCharacterName(e.target.value)} />
         <button onClick={searchCharacter}> Search </button>
-      </div>
-      <div className="infoSet">
+    </div>
+    <div className="infoSet">
         <button 
           onClick={() => setPage(page+1) }
           disabled={page === 1}
@@ -60,7 +60,7 @@ const Pokedex = () => {
           onClick={() => setPage(page-1) }
           disabled={page === totalPages}
         >Next Page</button>
-      </div>
+    </div>
       {types && <select className="filter" onChange={filterType} name="" id="">
         {types.map(type => (
             <option value={type.url}  key={type.name}>{type.name}</option>
